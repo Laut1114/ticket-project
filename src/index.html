@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Tickets</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h2>Nuevo Turno</h2>
+            </div>
+            <div class="actual-ticket">
+                <h2>Turno</h2>
+                <h2 id="ticketTitle"></h2>
+            </div>
+            <div class="actual-ticket-puesto">
+                <h4>Puesto <span id="ticketPuesto">-</span></h4>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="ticket-container">
+            <div class="tickets_atendidosHoy">
+                <h3>Tickets Atendidos Hoy: <span id="ticketsAtndHoy">-</span></h3>
+            </div>
+            <br>
+            <div class="ticket-list" id="ticket-list">
+                <div class="ticket">
+                    <p id="ticketName1"></p>
+                    <p id="ticketCall1"></p>
+                </div>
+                <br>
+                <div class="ticket">
+                    <p id="ticketName2"></p>
+                    <p id="ticketCall2"></p>
+                </div>
+                <br>
+                <div class="ticket">
+                    <p id="ticketName3"></p>
+                    <p id="ticketCall3"></p>
+                </div>
+            </div>
+            <div class="buttonsTicket">
+                <button id="callTicket">Llamar Ticket</button>
+                <button id="newTicket">Pedir Turno</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
